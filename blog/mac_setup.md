@@ -1,24 +1,34 @@
 # Mac 配置
 
-### 00. ClashX Pro - Proxy
+### ClashX Pro - Proxy
 
 [Download ClashX Pro](https://install.appcenter.ms/users/clashx/apps/clashx-pro/distribution_groups/public)
 
+``` shell
+export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_proxy=socks5://127.0.0.1:7890
+```
 
 
-### 01. Warp - Terminal
+
+### Warp - Terminal
 
 [Download Warp](https://www.warp.dev/)
 
 
 
-### 02. Fig - Shell autocomplete
+### Homebrew - Package Manager 
+
+[Install Homebrew](https://mirrors.tuna.tsinghua.edu.cn/help/homebrew/)
+
+
+
+### Fig - Shell Autocomplete
 
 [Download Fig](https://fig.io/)
 
 
 
-### 03. Tmux
+### Tmux
 
 - [Install tmux](https://github.com/tmux/tmux/wiki/Installing)
 
@@ -38,9 +48,11 @@
 
 [Tmux入门指南](https://cloud.tencent.com/developer/article/1095535)
 
+[Tmux 配置解析](https://www.bilibili.com/video/BV1kT411S7GL)
 
 
-### 04. Oh My Posh - Prompt
+
+### Oh My Posh - Prompt
 
 - [Install Oh My Posh](https://ohmyposh.dev/docs/installation/macos)
 
@@ -67,6 +79,77 @@
   ```sh
   exec zsh
   ```
+
+
+
+### Raycast - Launcher
+
+[Download Raycast](https://www.raycast.com/)
+
+
+
+### Rime - Input Method
+
+[Download Rime](https://github.com/ssnhd/rime)
+
+[Rime Squirrel 鼠须管输入法配置详解](https://ssnhd.com/2022/01/06/rime/)
+
+- `default.custom.yaml`
+
+  ``` yaml
+  patch:
+    ascii_composer:
+        good_old_caps_lock: false # 若为 true， Caps 只切换大小写
+        switch_key:
+          Caps_Lock: commit_code # Caps 键
+          Shift_L: noop # 左 Shift，屏蔽该切换键
+          Shift_R: noop # 右 Shift，屏蔽该切换键
+          Control_L: noop # 左 Control，屏蔽该切换键
+          Control_R: noop # 右 Control，屏蔽该切换键
+  ```
+  
+- `luna_pinyin_simp.custom.yaml`
+
+  ``` yaml
+  patch:
+    switches:
+      - name: ascii_mode # 0 中文，1 英文
+        reset: 0
+        states: ["中文", "英文"]
+  ```
+  
+- `squirrel.custom.yaml`
+  
+  ``` yaml
+  patch:
+  	app_options:    
+      com.apple.Spotlight:             # 聚焦搜索
+          ascii_mode: true             # true默认英文,false默认中文
+      com.runningwithcrayons.Alfred:   # alfred
+          ascii_mode: true
+      com.tencent.Lemon:               # 腾讯柠檬
+          ascii_mode: true
+      com.apple.dt.Xcode:              # Xcode
+          ascii_mode: true
+      com.apple.Terminal:              # 终端
+          ascii_mode: true
+          vim_mode: true
+      com.googlecode.iterm2:
+          ascii_mode: true
+          vim_mode: true
+      com.microsoft.VSCode:            # Visual Studio Code
+          ascii_mode: true
+          vim_mode: true
+      md.obsidian:
+          ascii_mode: true
+          vim_mode: true
+      dev.warp.Warp-Stable:
+          ascii_mode: true
+          vim_mode: true
+      com.raycast.macos:
+          ascii_mode: true
+  ```
+
 
 
 
