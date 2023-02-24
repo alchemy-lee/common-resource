@@ -88,6 +88,70 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 
 
+### Clangd 
+
+- 安装 clangdb：
+
+  sudo apt-get install clangd-9
+  
+  配置 vscode 的 setting.json，让其找得到 clangd：
+  
+  ``` json
+  "clangd.path": "/usr/lib/llvm-8/bin/clangd",
+  ```
+
+
+- 修改 CMakeLists.txt
+
+  ```cmake
+  set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
+  ```
+  
+  或者手动生成 compile_commands.json
+  
+  ```shell
+  cd build
+  cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=True ..
+  ```
+  
+- vscode 配置 clangd 配置文件：
+
+  shift + command + p: clangd open user configuration file
+  
+  ``` yaml
+  Diagnostics:
+    Suppress: type_unsupported
+  ```
+  
+- 配置 clangd 插件 Arguments
+
+  ```json
+  --completion-style=detailed
+  --compile-commands-dir=${workspaceFolder}/build
+  --header-insertion=never
+  --query-driver=/opt/homebrew/bin/aarch64-apple-darwin22-g++-12
+  ```
+
+- 修改 debug 配置：
+
+  vscode setting.json
+
+  ``` json
+  "cmake.debugConfig": {
+      "stopAtEntry": false,
+      "MIMode": "lldb",
+      "miDebuggerPath": "/Users/alchemy/.vscode/extensions/ms-vscode.cpptools-1.14.3-darwin-arm64/debugAdapters/lldb-mi/bin/lldb-mi",
+  },
+  ```
+
+[vscode + clangd 开发 c\c++](https://blog.csdn.net/weixin_43862847/article/details/119274382)
+
+[最终，我看向了clangd](https://zhuanlan.zhihu.com/p/364518020)
+
+[为 vscode 配置 clangd](https://juejin.cn/post/7126880493668139021)
+
+
+
 ### Rime - Input Method
 
 [Download Rime](https://github.com/ssnhd/rime)
