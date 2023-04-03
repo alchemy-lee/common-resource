@@ -216,6 +216,31 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 
 
+### Zellij
+
+
+
+### Edge
+
+扩展
+
+- Octotree
+
+- Vimium C
+
+  ```
+  map K previousTab
+  map J nextTab
+  ```
+
+- iTab
+
+- JSONVue
+
+- 沙拉查词
+
+
+
 
 ### Mac 设置
 
