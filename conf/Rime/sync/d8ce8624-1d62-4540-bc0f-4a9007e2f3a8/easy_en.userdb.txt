@@ -1,0 +1,7 @@
+# Rime user dictionary
+#@/db_name	easy_en
+#@/db_type	userdb
+#@/rime_version	1.8.5
+#@/tick	1
+#@/user_id	d8ce8624-1d62-4540-bc0f-4a9007e2f3a8
+call 	call	c=1 d=1 t=1
