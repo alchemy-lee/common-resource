@@ -150,7 +150,8 @@ export https_proxy=http://127.0.0.1:7890 http_proxy=http://127.0.0.1:7890 all_pr
 
 [为 vscode 配置 clangd](https://juejin.cn/post/7126880493668139021)
 
-
+If you move the clangd binary around, you should also put the builtin headers alongside it.
+clangd looks tries to find those relative to its path in ../lib/clang/<version>/include. E.g. if you have clangd version 9 at /opt/bin/clangd, it will look for builtin headers at /opt/lib/clang/9.0.0/include.
 
 ### Rime - Input Method
 
