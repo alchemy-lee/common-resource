@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-06-06T12:21:09.348Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.62" etag="u_p7anCoJ6X3ib8jKRmH" version="21.3.7" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-06-06T12:23:03.914Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36 Edg/111.0.1661.62" etag="HlzF8_XKUc75RZczQh67" version="21.3.7" type="github" pages="7">
   <diagram name="第 1 页" id="e0peyYT_SfHaQZea06jY">
     <mxGraphModel dx="906" dy="623" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -761,27 +761,27 @@
           <mxGeometry x="695" y="721" width="40" height="20" as="geometry" />
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#efefef;strokeColor=#969696;strokeWidth=3;" vertex="1" parent="1">
-          <mxGeometry x="160" y="190" width="220" height="140" as="geometry" />
+          <mxGeometry x="120" y="220" width="220" height="140" as="geometry" />
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-3" value="&lt;font face=&quot;JetBrainsMonoNL Nerd Font Mono&quot; style=&quot;font-size: 18px;&quot;&gt;http deamon&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="170" y="200" width="135" height="30" as="geometry" />
+          <mxGeometry x="130" y="230" width="135" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-4" value="&lt;font face=&quot;JetBrainsMonoNL Nerd Font Mono&quot; style=&quot;font-size: 18px;&quot;&gt;http socket&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;fillColor=#ffeba8;strokeColor=#f8d560;strokeWidth=3;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="215" y="240" width="110" height="75" as="geometry" />
+          <mxGeometry x="175" y="270" width="110" height="75" as="geometry" />
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=none;startFill=0;shadow=0;sketch=1;curveFitting=1;jiggle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="mExMzn_4t28QFT2bkkh6-6" target="mExMzn_4t28QFT2bkkh6-4">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="235" y="278" as="targetPoint" />
+            <mxPoint x="195" y="308" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-6" value="&lt;font face=&quot;JetBrainsMonoNL Nerd Font Mono&quot; style=&quot;font-size: 18px;&quot;&gt;client&lt;/font&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
-          <mxGeometry x="90" y="240" width="40" height="75" as="geometry" />
+          <mxGeometry x="40" y="270" width="40" height="75" as="geometry" />
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-7" value="&lt;font face=&quot;JetBrainsMonoNL Nerd Font Mono&quot; style=&quot;font-size: 16px;&quot;&gt;REST API&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="132" y="256" width="81" height="20" as="geometry" />
+          <mxGeometry x="85" y="286" width="81" height="20" as="geometry" />
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-9" value="&lt;font face=&quot;JetBrainsMonoNL Nerd Font Mono&quot; style=&quot;font-size: 16px;&quot;&gt;transmit&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="245" y="410" width="81" height="20" as="geometry" />
+          <mxGeometry x="345" y="285" width="81" height="20" as="geometry" />
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-10" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#efefef;strokeColor=#969696;strokeWidth=3;" vertex="1" parent="1">
           <mxGeometry x="430" y="220" width="300" height="230" as="geometry" />
@@ -806,6 +806,12 @@
         </mxCell>
         <mxCell id="mExMzn_4t28QFT2bkkh6-17" value="&lt;font face=&quot;JetBrainsMonoNL Nerd Font Mono&quot; style=&quot;font-size: 16px;&quot;&gt;ET&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="575" y="655" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4GzNSQG-jOwOz5CFXOKr-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;startArrow=none;startFill=0;shadow=0;sketch=1;curveFitting=1;jiggle=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="mExMzn_4t28QFT2bkkh6-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="435" y="306" as="targetPoint" />
+            <mxPoint x="340" y="306" as="sourcePoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
