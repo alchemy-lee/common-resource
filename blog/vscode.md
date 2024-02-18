@@ -2,8 +2,10 @@
 
 ### 快捷键
 
-focus the hover control (`⌘K ⌘I`)
+focus the hover control: `⌘K ⌘I`
 
-Go to Bracket (⌘ + ⇧ + \)
+Go to Bracket: `⌘ + ⇧ + \`
 
-Focus Next Terminal (⌥ + ↓)
+Focus Next Terminal: `⌥ + ↓`
+
+Go To Symbols(Functions): `⌘ + ⇧ + O` 
