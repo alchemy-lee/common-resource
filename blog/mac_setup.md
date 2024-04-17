@@ -264,3 +264,6 @@ clangd looks tries to find those relative to its path in ../lib/clang/<version>/
     make install
     ```
 
+- 关闭切换输入法 popup
+
+  `sudo defaults write /Library/Preferences/FeatureFlags/Domain/UIKit.plist redesigned_text_cursor -dict-add Enabled -bool NO`
